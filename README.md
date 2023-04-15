@@ -4,6 +4,16 @@
 
 AR Car Viewer is a mobile application developed using Flutter framework which provides users the ability to view cars in an augmented reality (AR) environment. The app aims to give users a unique car viewing experience, allowing them to visualize cars in a real-world environment using their mobile device camera.
 
+## Screenshots
+
+|          Splash          |        Home Page         |          video           |
+| :----------------------: | :----------------------: | :----------------------: |
+| ![](ScreenShots/sc3.jpg) | ![](ScreenShots/sc4.jpg) | ![](ScreenShots/sc8.mp4) |
+
+|       Mercedes AMG       |       Ford Mastang       |       Ferari SF90        |
+| :----------------------: | :----------------------: | :----------------------: |
+| ![](ScreenShots/sc5.jpg) | ![](ScreenShots/sc6.jpg) | ![](ScreenShots/sc7.jpg) |
+
 ## Features
 
 -View cars in an augmented reality environment
@@ -71,12 +81,6 @@ AR Car Viewer is a mobile application developed using Flutter framework which pr
 - Improve AR accuracy and stability
 - Add support for more mobile devices
 - Implement car customization features
-
-## Screenshots
-
-|       Details Page        |         Home Page         |          Logo           |
-| :-----------------------: | :-----------------------: | :---------------------: |
-| ![](ScreenShots/sc1.jpeg) | ![](ScreenShots/sc2.jpeg) | ![](ScreenShots/BB.png) |
 
 ## License
 
