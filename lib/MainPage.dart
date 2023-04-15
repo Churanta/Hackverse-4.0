@@ -5,7 +5,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 251, 243, 245),
+      backgroundColor: Color.fromARGB(255, 246, 250, 255),
       appBar: CustomAppBar(),
       body: ListView(
         children: <Widget>[
@@ -82,7 +82,7 @@ class HomePage extends StatelessWidget {
               RichText(
                 text: TextSpan(
                   style: TextStyle(
-                    fontSize: 24,
+                    fontSize: 20,
                     fontWeight: FontWeight.bold,
                     color: Color.fromARGB(255, 255, 90, 90),
                   ),
@@ -93,8 +93,8 @@ class HomePage extends StatelessWidget {
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           Image.network(
-                            'https://www.freepnglogos.com/uploads/indian-flag-png/indian-flag-india-day-background-png-image-download-5.png',
-                            width: 60, // set the width of the image
+                            'https://cdn.pixabay.com/photo/2017/02/26/00/31/borders-2099205__340.png',
+                            width: 20, // set the width of the image
                             height: 30, // set the height of the image
                             fit: BoxFit.cover,
                           ),
@@ -140,7 +140,71 @@ class HomePage extends StatelessWidget {
                     ),
                   ],
                 ),
-              )
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'Top Brands',
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Color.fromARGB(255, 255, 90, 90)),
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                      print("View all");
+                      // Your function here
+                    },
+                    child: Row(
+                      children: [
+                        Text(
+                          'View All',
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.grey[600],
+                          ),
+                        ),
+                        Icon(
+                          Icons.arrow_forward_ios,
+                          color: Colors.grey[600],
+                          size: 16,
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: SizedBox(
+                    height: 200,
+                    child: Row(
+                      children: <Widget>[
+                        _buildCard(
+                          'https://tesla-cdn.thron.com/delivery/public/image/tesla/0f22af4d-15e0-452d-ba66-1359490b4a0b/bvlatuR/std/2880x1800/Cybertruck-Hero-Desktop',
+                          'Cybertruck',
+                          () => print('Product 1 tapped!'),
+                        ),
+                        _buildCard(
+                          'https://www.carscoops.com/wp-content/uploads/2018/01/Alfa-Romeo-6C-Report-.jpg',
+                          'Alfa Romeo 6C',
+                          () => print('Product 2 tapped!'),
+                        ),
+                        _buildCard(
+                          'https://cdn.bigboytoyz.com/newcar/files/upload/varinat/1608376738428-2021_mercedes-amg_gt_black_series_43_1600x1200.jpg',
+                          'Mercedes AMG GT',
+                          () => print('Product 3 tapped!'),
+                        ),
+                        _buildCard(
+                          'https://windingroad.com/wp-content/uploads/autos_db/thumbnails/ferrari-330-p3-5.jpg',
+                          'Ferrari 330p \n hi',
+                          () => print('Product 4 tapped!'),
+                        ),
+                      ],
+                    )),
+              ),
             ],
           ),
         ],
