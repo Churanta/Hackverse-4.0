@@ -39,6 +39,12 @@ class DebugOptionsWidget extends StatelessWidget {
                   'assets/models/Giulettina.glb',
                   'A 3D model of the Earth',
                 ),
+                _buildCard(
+                  context,
+                  Icons.account_box,
+                  'assets/models/cyber.glb',
+                  'A 3D model of the Earth',
+                ),
               ],
             ),
           ),

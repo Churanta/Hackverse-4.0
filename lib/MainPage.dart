@@ -1,6 +1,8 @@
 import 'package:arplayground/presentation/home.dart';
 import 'package:flutter/material.dart';
 
+import 'Cars/cyber.dart';
+
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -17,9 +19,20 @@ class HomePage extends StatelessWidget {
                 Text(
                   'Featured Products',
                   style: TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                      color: Color.fromARGB(255, 255, 90, 90)),
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                    foreground: Paint()
+                      ..shader = LinearGradient(
+                        colors: [
+                          Color.fromARGB(255, 135, 206, 250), // light blue
+                          Color.fromARGB(255, 0, 191, 255), // medium blue
+                          Color.fromARGB(255, 0, 0, 205), // deep blue
+                        ],
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                      ).createShader(Rect.fromLTRB(0, 0, 0,
+                          40)), // change the last value to increase/decrease the height of the gradient effect
+                  ),
                 ),
                 GestureDetector(
                   onTap: () {
@@ -52,7 +65,7 @@ class HomePage extends StatelessWidget {
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: SizedBox(
-                    height: 200,
+                    height: 180,
                     child: Row(
                       children: <Widget>[
                         _buildCard(
@@ -61,24 +74,25 @@ class HomePage extends StatelessWidget {
                           () => print('Product 1 tapped!'),
                         ),
                         _buildCard(
-                          'https://www.carscoops.com/wp-content/uploads/2018/01/Alfa-Romeo-6C-Report-.jpg',
+                          'https://stimg.cardekho.com/images/carexteriorimages/930x620/Mercedes-Benz/AMG-GT/7842/1609141333284/front-left-side-47.jpg',
+                          'Mercedes AMG',
+                          () => print('Product 3 tapped!'),
+                        ),
+                        _buildCard(
+                          'https://www.topgear.com/sites/default/files/images/inline-galleries/2023/01/e95c8ad1e88436f067766b400dd3db64/05_Alfa-Romeo_GiuliaSWB_Zagato.jpg',
                           'Alfa Romeo 6C',
                           () => print('Product 2 tapped!'),
                         ),
                         _buildCard(
-                          'https://cdn.bigboytoyz.com/newcar/files/upload/varinat/1608376738428-2021_mercedes-amg_gt_black_series_43_1600x1200.jpg',
-                          'Mercedes AMG GT',
-                          () => print('Product 3 tapped!'),
-                        ),
-                        _buildCard(
-                          'https://windingroad.com/wp-content/uploads/autos_db/thumbnails/ferrari-330-p3-5.jpg',
-                          'Ferrari 330p \n hi',
+                          'https://stimg.cardekho.com/images/carexteriorimages/360x240/Jaguar/Jaguar-F-Type/047.jpg',
+                          'Jaguar F-Type',
                           () => print('Product 4 tapped!'),
                         ),
                       ],
                     )),
               ),
               Divider(),
+              SizedBox(height: 10),
               RichText(
                 text: TextSpan(
                   style: TextStyle(
@@ -106,6 +120,7 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
               ),
+              SizedBox(height: 15),
               Center(
                 child: Wrap(
                   spacing: 16, // spacing between cards
@@ -124,9 +139,16 @@ class HomePage extends StatelessWidget {
                       },
                     ),
                     _buildCard(
-                      'https://windingroad.com/wp-content/uploads/autos_db/thumbnails/ferrari-330-p3-5.jpg',
-                      'Product 6',
-                      () => print('Product 6 tapped!'),
+                      'https://tesla-cdn.thron.com/delivery/public/image/tesla/0f22af4d-15e0-452d-ba66-1359490b4a0b/bvlatuR/std/2880x1800/Cybertruck-Hero-Desktop',
+                      'Cyber Truck',
+                      () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Cyber(),
+                          ),
+                        );
+                      },
                     ),
                     _buildCard(
                       'https://windingroad.com/wp-content/uploads/autos_db/thumbnails/ferrari-330-p3-5.jpg',
@@ -141,6 +163,7 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
               ),
+              SizedBox(height: 20),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -176,31 +199,32 @@ class HomePage extends StatelessWidget {
                   ),
                 ],
               ),
+              SizedBox(height: 20),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: SizedBox(
-                    height: 200,
+                    height: 180,
                     child: Row(
                       children: <Widget>[
                         _buildCard(
-                          'https://tesla-cdn.thron.com/delivery/public/image/tesla/0f22af4d-15e0-452d-ba66-1359490b4a0b/bvlatuR/std/2880x1800/Cybertruck-Hero-Desktop',
-                          'Cybertruck',
-                          () => print('Product 1 tapped!'),
+                          'https://cdni.autocarindia.com/ExtraImages/20220211050819_Alfa_Romeo_Giulia_GTA.jpg',
+                          'Alpha Romeo',
+                          () => print('Alpha Romeo'),
                         ),
                         _buildCard(
-                          'https://www.carscoops.com/wp-content/uploads/2018/01/Alfa-Romeo-6C-Report-.jpg',
-                          'Alfa Romeo 6C',
-                          () => print('Product 2 tapped!'),
+                          'https://imgd-ct.aeplcdn.com/1056x660/n/jkpj3sa_1483580.jpg?q=75',
+                          'Jaguar',
+                          () => print('Jaguar'),
                         ),
                         _buildCard(
-                          'https://cdn.bigboytoyz.com/newcar/files/upload/varinat/1608376738428-2021_mercedes-amg_gt_black_series_43_1600x1200.jpg',
-                          'Mercedes AMG GT',
-                          () => print('Product 3 tapped!'),
+                          'https://stimg.cardekho.com/images/carexteriorimages/930x620/Ferrari/SF90-Stradale/7858/1591681679806/front-view-118.jpg',
+                          'Ferrari',
+                          () => print('Ferrari'),
                         ),
                         _buildCard(
-                          'https://windingroad.com/wp-content/uploads/autos_db/thumbnails/ferrari-330-p3-5.jpg',
-                          'Ferrari 330p \n hi',
-                          () => print('Product 4 tapped!'),
+                          'https://www.ford.com/is/image/content/dam/vdm_ford/live/en_us/ford/nameplate/mustang/2023/collections/dm/22_FRD_MST_55079_C7447317_MUST_GT_Prem_34FrntPassMotnRain_mj.tif?croppathe=1_3x2&wid=900',
+                          'Ford Mastang',
+                          () => print('Ford Mastang'),
                         ),
                       ],
                     )),
@@ -289,8 +313,8 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       ),
       leading: Container(
         padding: EdgeInsets.all(8.0),
-        child: Image.network(
-          'https://brainbinaryinfotech.com/front/assets/images/logo.png',
+        child: Image.asset(
+          'assets/BB.png',
           height: 40,
           width: 40,
         ),
