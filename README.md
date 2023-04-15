@@ -8,9 +8,9 @@ AR Car Viewer is a mobile application developed using Flutter framework which pr
 
 [![Video](https://drive.google.com/file/d/1lttcswkKCeja5yEkj9aLPIqr5RgprcrI/view?usp=share_link)](https://drive.google.com/file/d/1lttcswkKCeja5yEkj9aLPIqr5RgprcrI/view?usp=share_link)
 
-|          Splash          |        Home Page         |                                                 video                                                  |
-| :----------------------: | :----------------------: | :----------------------------------------------------------------------------------------------------: |
-| ![](ScreenShots/sc3.jpg) | ![](ScreenShots/sc4.jpg) | <iframe src="https://drive.google.com/file/d/YOUR_VIDEO_ID/preview" width="640" height="480"></iframe> |
+|          Splash          |        Home Page         |
+| :----------------------: | :----------------------: |
+| ![](ScreenShots/sc3.jpg) | ![](ScreenShots/sc4.jpg) |
 |                          |
 
 |       Mercedes AMG       |       Ford Mastang       |       Ferari SF90        |
