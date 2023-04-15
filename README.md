@@ -1,4 +1,5 @@
-# arplayground
+## Screenshots
 
-https://user-images.githubusercontent.com/44040428/196029841-5073f3b3-190e-4288-8dbb-d033ca18102c.mp4
-
+|       Details Page        |         Home Page         |          Logo           |
+| :-----------------------: | :-----------------------: | :---------------------: |
+| ![](ScreenShots/sc1.jpeg) | ![](ScreenShots/sc2.jpeg) | ![](ScreenShots/BB.png) |
