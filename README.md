@@ -36,6 +36,8 @@ Our technology stack includes Flutter, Blender, Augmented Reality, and Google AR
 
 In summary, our app aims to create a more enjoyable and efficient car shopping experience for users by leveraging the benefits of AR technology, providing detailed information about each car in one place, and being highly user-friendly. It is a unique and innovative solution that aids researchers in gaining and learning the most recent car design techniques.
 
+To download the design, click [here](https://drive.google.com/file/d/1EGwE2VkjNq3hvrH5dv5VbsiQ0_V5kh5H/view?usp=sharing).
+
 
 ## Screenshots
 
