@@ -2,7 +2,24 @@
 
 ## Overview
 
-AR Car Viewer is a mobile application developed using Flutter framework which provides users the ability to view cars in an augmented reality (AR) environment. The app aims to give users a unique car viewing experience, allowing them to visualize cars in a real-world environment using their mobile device camera.
+AR Car Viewer is a mobile application developed using Flutter framework which provides users the ability to view cars in an augmented reality (AR) environment. The app aims to give users a unique car viewing experience, allowing them to visualize cars in a real-world environment using their mobile device camera. It also helps engineers and car designers understand more about the advancement of technology.
+![image](https://user-images.githubusercontent.com/83538805/232266879-58b8a55d-31f4-41e1-a073-32ce7074316b.png)
+
+
+## Technology Stack
+
+- Flutter 2.5.3
+- ARKit (iOS) and ARCore (Android)
+- Blender
+- Flutter Packages: camera, image_gallery_saver, ar_flutter_plugin,path_provider,model_viewer_plus
+
+## Installation and Setup
+
+- Clone the repository from GitHub: https://github.com/Churanta/Hackverse-4.0.git
+- Open the project in Android Studio or Visual Studio Code
+- Install the required packages by running the command flutter pub get
+- Connect your mobile device to your computer and enable USB debugging
+- Run the app on your mobile device using flutter run
 
 ## Screenshots
 
@@ -35,20 +52,9 @@ AR Car Viewer is a mobile application developed using Flutter framework which pr
 - Take a screenshot of the AR view and save it to the gallery
 - Share the screenshot with friends and family
 
-## Technology Stack
 
-- Flutter 2.5.3
-- ARKit (iOS) and ARCore (Android)
-- Blender
-- Flutter Packages: camera, image_gallery_saver, ar_flutter_plugin,path_provider,model_viewer_plus
 
-## Installation and Setup
 
-- Clone the repository from GitHub: https://github.com/Churanta/Hackverse-4.0.git
-- Open the project in Android Studio or Visual Studio Code
-- Install the required packages by running the command flutter pub get
-- Connect your mobile device to your computer and enable USB debugging
-- Run the app on your mobile device using flutter run
 
 ## Usage
 
