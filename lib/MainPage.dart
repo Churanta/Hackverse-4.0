@@ -1,13 +1,23 @@
+import 'package:arplayground/Cars/alfaromeo6c.dart';
+import 'package:arplayground/Cars/jaguarftype.dart';
+import 'package:arplayground/Cars/jhtype.dart';
+import 'package:arplayground/Cars/lambo.dart';
+import 'package:arplayground/Cars/lamborgundi.dart';
+import 'package:arplayground/Cars/mercedesamg.dart';
+import 'package:arplayground/Cars/mustang.dart';
+import 'package:arplayground/Cars/product6.dart';
+import 'package:arplayground/Cars/product7.dart';
 import 'package:arplayground/presentation/home.dart';
 import 'package:flutter/material.dart';
 
 import 'Cars/cyber.dart';
+import 'Cars/ferari.dart';
 
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 246, 250, 255),
+      backgroundColor: Color.fromARGB(255, 255, 255, 255),
       appBar: CustomAppBar(),
       body: ListView(
         children: <Widget>[
@@ -24,9 +34,9 @@ class HomePage extends StatelessWidget {
                     foreground: Paint()
                       ..shader = LinearGradient(
                         colors: [
-                          Color.fromARGB(255, 135, 206, 250), // light blue
-                          Color.fromARGB(255, 0, 191, 255), // medium blue
-                          Color.fromARGB(255, 0, 0, 205), // deep blue
+                          Colors.orangeAccent, // light blue
+                          Colors.orangeAccent, // medium blue
+                          Colors.orangeAccent, // deep blue
                         ],
                         begin: Alignment.topCenter,
                         end: Alignment.bottomCenter,
@@ -71,22 +81,50 @@ class HomePage extends StatelessWidget {
                         _buildCard(
                           'https://tesla-cdn.thron.com/delivery/public/image/tesla/0f22af4d-15e0-452d-ba66-1359490b4a0b/bvlatuR/std/2880x1800/Cybertruck-Hero-Desktop',
                           'Cybertruck',
-                          () => print('Product 1 tapped!'),
+                          () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Cyber(),
+                              ),
+                            );
+                          },
                         ),
                         _buildCard(
                           'https://stimg.cardekho.com/images/carexteriorimages/930x620/Mercedes-Benz/AMG-GT/7842/1609141333284/front-left-side-47.jpg',
                           'Mercedes AMG',
-                          () => print('Product 3 tapped!'),
+                          () => {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Mercedsamg(),
+                              ),
+                            )
+                          },
                         ),
                         _buildCard(
                           'https://www.topgear.com/sites/default/files/images/inline-galleries/2023/01/e95c8ad1e88436f067766b400dd3db64/05_Alfa-Romeo_GiuliaSWB_Zagato.jpg',
                           'Alfa Romeo 6C',
-                          () => print('Product 2 tapped!'),
+                          () => {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Alfaromeo6c(),
+                              ),
+                            )
+                          },
                         ),
                         _buildCard(
                           'https://stimg.cardekho.com/images/carexteriorimages/360x240/Jaguar/Jaguar-F-Type/047.jpg',
                           'Jaguar F-Type',
-                          () => print('Product 4 tapped!'),
+                          () => {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Jaguarftype(),
+                              ),
+                            )
+                          },
                         ),
                       ],
                     )),
@@ -98,23 +136,23 @@ class HomePage extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 255, 90, 90),
+                    color: Colors.orangeAccent,
                   ),
                   children: [
-                    TextSpan(text: 'Top 10 in '),
+                    TextSpan(text: 'High-End Models  '),
                     WidgetSpan(
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Image.network(
-                            'https://cdn.pixabay.com/photo/2017/02/26/00/31/borders-2099205__340.png',
-                            width: 20, // set the width of the image
-                            height: 30, // set the height of the image
-                            fit: BoxFit.cover,
-                          ),
-                          // SizedBox(width: 8),
-                          // Text('India'),
-                        ],
+                        // children: [
+                        //   Image.network(
+                        //     'https://www.pngall.com/wp-content/uploads/2017/05/Save-Earth-PNG-Picture.png',
+                        //     width: 30, // set the width of the image
+                        //     height: 30, // set the height of the image
+                        //     fit: BoxFit.cover,
+                        //   ),
+                        //   // SizedBox(width: 8),
+                        //   // Text('India'),
+                        // ],
                       ),
                     ),
                   ],
@@ -127,38 +165,52 @@ class HomePage extends StatelessWidget {
                   runSpacing: 16, // spacing between rows
                   children: [
                     _buildCard(
-                      'https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/models_gw/2023/03_29_revuelto/gate_models_s_02_m.jpg',
-                      'Product 5',
+                      'https://static.autox.com/uploads/2022/10/Volvo-S90-Bright-Silver-Metallic.jpg',
+                      'Volvo S90',
                       () {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => DebugOptionsWidget(),
+                            builder: (context) => Lambo(),
                           ),
                         );
                       },
                     ),
                     _buildCard(
                       'https://tesla-cdn.thron.com/delivery/public/image/tesla/0f22af4d-15e0-452d-ba66-1359490b4a0b/bvlatuR/std/2880x1800/Cybertruck-Hero-Desktop',
-                      'Cyber Truck',
+                      'Lamborghini Aventador ',
                       () {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => Cyber(),
+                            builder: (context) => lamborgundi(),
                           ),
                         );
                       },
                     ),
                     _buildCard(
-                      'https://windingroad.com/wp-content/uploads/autos_db/thumbnails/ferrari-330-p3-5.jpg',
-                      'Product 6',
-                      () => print('Product 6 tapped!'),
+                      'https://www.ford.com/is/image/content/dam/vdm_ford/live/en_us/ford/nameplate/mustang/2023/collections/dm/22_FRD_MST_55079_C7447317_MUST_GT_Prem_34FrntPassMotnRain_mj.tif?croppathe=1_3x2&wid=900',
+                      'Ford Mastang',
+                      () => {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Product6(),
+                          ),
+                        )
+                      },
                     ),
                     _buildCard(
-                      'https://windingroad.com/wp-content/uploads/autos_db/thumbnails/ferrari-330-p3-5.jpg',
-                      'Product 6',
-                      () => print('Product 6 tapped!'),
+                      'https://images.cdn.circlesix.co/image/2/1200/630/5/uploads/media/2021-07/15/791f3c9be5a2368a/86-mpg-sandbox-oskarbakke-_dsc03222.jpeg',
+                      'Porshe 959',
+                      () => {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Product7(),
+                          ),
+                        )
+                      },
                     ),
                   ],
                 ),
@@ -172,9 +224,9 @@ class HomePage extends StatelessWidget {
                     style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
-                        color: Color.fromARGB(255, 255, 90, 90)),
+                        color: Colors.orangeAccent),
                   ),
-                  GestureDetector(
+                  InkWell(
                     onTap: () {
                       print("View all");
                       // Your function here
@@ -208,23 +260,51 @@ class HomePage extends StatelessWidget {
                       children: <Widget>[
                         _buildCard(
                           'https://cdni.autocarindia.com/ExtraImages/20220211050819_Alfa_Romeo_Giulia_GTA.jpg',
-                          'Alpha Romeo',
-                          () => print('Alpha Romeo'),
+                          'MC Laren',
+                          () => {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Alfaromeo6c(),
+                              ),
+                            )
+                          },
                         ),
                         _buildCard(
                           'https://imgd-ct.aeplcdn.com/1056x660/n/jkpj3sa_1483580.jpg?q=75',
-                          'Jaguar',
-                          () => print('Jaguar'),
+                          'Jaguar F-Type',
+                          () => {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => jhtype(),
+                              ),
+                            )
+                          },
                         ),
                         _buildCard(
                           'https://stimg.cardekho.com/images/carexteriorimages/930x620/Ferrari/SF90-Stradale/7858/1591681679806/front-view-118.jpg',
                           'Ferrari',
-                          () => print('Ferrari'),
+                          () => {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Ferari(),
+                              ),
+                            )
+                          },
                         ),
                         _buildCard(
                           'https://www.ford.com/is/image/content/dam/vdm_ford/live/en_us/ford/nameplate/mustang/2023/collections/dm/22_FRD_MST_55079_C7447317_MUST_GT_Prem_34FrntPassMotnRain_mj.tif?croppathe=1_3x2&wid=900',
                           'Ford Mastang',
-                          () => print('Ford Mastang'),
+                          () => {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Product6(),
+                              ),
+                            )
+                          },
                         ),
                       ],
                     )),
@@ -300,42 +380,44 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AppBar(
-      backgroundColor: Colors.white,
-      elevation: 0,
-      title: Text(
-        'Binary Brains',
-        style: TextStyle(
-          fontSize: 24.0,
-          fontWeight: FontWeight.bold,
-          color: Colors.black,
-        ),
+    return Container(
+      decoration: BoxDecoration(
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey.withOpacity(0.5),
+            spreadRadius: 2,
+            blurRadius: 5,
+            offset: Offset(0, 3), // changes position of shadow
+          ),
+        ],
       ),
-      leading: Container(
-        padding: EdgeInsets.all(8.0),
-        child: Image.asset(
-          'assets/BB.png',
-          height: 40,
-          width: 40,
+      child: AppBar(
+        backgroundColor: Color.fromARGB(255, 255, 244, 230),
+        elevation: 0,
+        title: Text(
+          'Binary Brains',
+          style: TextStyle(
+            fontSize: 24.0,
+            fontWeight: FontWeight.bold,
+            color: Colors.black,
+          ),
         ),
+        leading: Container(
+          padding: EdgeInsets.all(8.0),
+          child: Image.asset(
+            'assets/BB.png',
+            height: 40,
+            width: 40,
+          ),
+        ),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.notifications),
+            color: Colors.black,
+            onPressed: () {},
+          ),
+        ],
       ),
-      actions: <Widget>[
-        IconButton(
-          icon: Icon(Icons.notifications),
-          color: Colors.black,
-          onPressed: () {},
-        ),
-      ],
-      // flexibleSpace: Container(
-      //   decoration: BoxDecoration(
-      //     image: DecorationImage(
-      //       image: NetworkImage(
-      //         'https://img.freepik.com/free-vector/background-template-with-mandala-pattern-design_1308-42133.jpg',
-      //       ),
-      //       fit: BoxFit.cover,
-      //     ),
-      //   ),
-      // ),
     );
   }
 }
