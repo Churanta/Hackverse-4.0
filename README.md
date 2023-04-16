@@ -6,7 +6,7 @@ AR Car Viewer is a mobile application developed using Flutter framework which pr
 
 ## Screenshots
 
-[![Video](https://drive.google.com/file/d/1lttcswkKCeja5yEkj9aLPIqr5RgprcrI/view?usp=share_link)](https://drive.google.com/file/d/1lttcswkKCeja5yEkj9aLPIqr5RgprcrI/view?usp=share_link)
+[![Video]([https://drive.google.com/file/d/1lttcswkKCeja5yEkj9aLPIqr5RgprcrI/view?usp=share_link](https://youtu.be/8CiHawyc4zg))]([https://drive.google.com/file/d/1lttcswkKCeja5yEkj9aLPIqr5RgprcrI/view?usp=share_link](https://youtu.be/8CiHawyc4zg))
 
 |          Splash          |        Home Page         |
 | :----------------------: | :----------------------: |
@@ -92,4 +92,4 @@ AR Car Viewer is a mobile application developed using Flutter framework which pr
 
 This project is licensed under the MIT License - see the LICENSE.md file for details.
 
-## Screenshots
+
