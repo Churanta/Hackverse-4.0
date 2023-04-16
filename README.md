@@ -1,4 +1,4 @@
-# AR Car Showroom
+# AR Showroom
 
 ## Overview
 
@@ -20,6 +20,23 @@ AR Car Viewer is a mobile application developed using Flutter framework which pr
 - Install the required packages by running the command flutter pub get
 - Connect your mobile device to your computer and enable USB debugging
 - Run the app on your mobile device using flutter run
+
+## Declaration of project
+We, the development team behind the AR-Based Car Shopping and Visualization App, hereby declare our commitment to creating a high-quality, innovative, and user-friendly app that will provide an enhanced and engaging car shopping experience for users.
+
+We have built an app to address the inconvenience and lack of engagement that people experience when shopping for cars by providing a more immersive and interactive car shopping experience and by providing detailed information about each car in one place.
+We are proud to introduce our new app, an Augmented Reality (AR)-based car viewing app developed using the Flutter framework. Our app aims to provide an enhanced and engaging car shopping experience to users by leveraging the benefits of AR technology.
+
+Through our app, users can explore cars in a 3D AR environment, which provides a more immersive and interactive way to visualize different car models. Additionally, our app simplifies the car shopping process by providing detailed information about each car in one place, including both outer and interior details.
+
+Our app differs from others because it uses AR technology to view the app, rather than traditional 2D images, which helps attract user attention. It is also highly user-friendly, allowing users to make informed decisions about which car best suits their needs.
+
+Furthermore, our app is the first of its kind, as there are no market competitors that use this technology for displaying different brands and models of vehicles. Our app is also designed to provide a more enjoyable and efficient car shopping experience, making it an ideal choice for users looking for a more engaging way to explore cars.
+
+Our technology stack includes Flutter, Blender, Augmented Reality, and Google AR Core, along with several Flutter packages such as ar_flutter_plugin, path_provider, model_viewer_plus, image_gallery_saver, and camera.
+
+In summary, our app aims to create a more enjoyable and efficient car shopping experience for users by leveraging the benefits of AR technology, providing detailed information about each car in one place, and being highly user-friendly. It is a unique and innovative solution that aids researchers in gaining and learning the most recent car design techniques.
+
 
 ## Screenshots
 
