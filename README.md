@@ -26,7 +26,7 @@ AR Car Viewer is a mobile application developed using Flutter framework which pr
 - View car details, including name, model, price, and specifications
 - Rotate and move the car to view it from different angles
 - Take a screenshot of the AR view and save it to the gallery
-- Share the screenshot with friends and family
+- Share the screenshot with friends and family 📱
 
 ## Technology Stack
 
