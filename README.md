@@ -50,7 +50,7 @@ AR Car Viewer is a mobile application developed using Flutter framework which pr
 - Use your mobile device camera to scan your surroundings and place the car in the desired location
 - Use your fingers to rotate and move the car to view it from different angles
 - Take a screenshot of the AR view and save it to the gallery
-- Share the screenshot with friends and family
+- Share the screenshot with friends and family 🙂
 
 ## Code Structure
 
